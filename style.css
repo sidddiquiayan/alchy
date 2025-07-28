@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+    padding: 0;
+   padding: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.end-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.end-menu a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+}
+ul .fa-bars{
+    font-size: 20px;
+    color: black;
+    cursor: pointer;
+    font-weight: 600;
+}
+.search-icon {
+  font-size: 20px;
+  font-weight: 100;
+  color: #333; /* Adjust to match your design */
+  opacity: 0.6; /* Creates a thinner look */
+}
+.imagehero{
+    width: 100%;
+
+   
+    border: white;
+    background-position: center;
+}
+.container1 {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Video background */
+.video-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+/* Logo image with blend mode */
+.imagehero {
+  position: relative;
+  width: 80%;
+  max-width: 500px;
+  mix-blend-mode: screen; /* shows video through transparent parts */
+  z-index: 2;
+}
+
+/* Masked list */
+.masked {
+  position: relative;
+  z-index: 2;
+  mix-blend-mode: screen; /* Makes video visible through text */
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  list-style: none;
+  padding: 0;
+  margin: 40px 0 0 0;
+  color: white; /* Needed for screen blend mode to reveal video */
+}
+
+.masked li {
+  margin: 10px 0;
+  letter-spacing: 2px;
+}
+ body, html {
+      margin: 0;
+      padding: 0;
+      background: white;
+      height: 100vh;
+    overflow-x: hidden;
+    }
+
+    .mask-container {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+    }
+
+    .background-video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      mask: url(#text-mask);
+      -webkit-mask: url(#text-mask);
+    }
+.mask-svg {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  mask: url(#text-mask);
+  -webkit-mask: url(#text-mask);
+}
+
+/* Logo style */
+.mask-logo {
+ width: 67%;
+  fill: white;
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 15px;
+}
+
+/* Nav style */
+.mask-nav {
+  font-size: 32px;
+  fill: white;
+  font-family: 'Oswald';
+  cursor: pointer;
+}
+
+/* Responsive: smaller screens */
+@media (max-width: 768px) {
+ .mask-container{
+    display: none;
+ }
+}
+
+.mask-chev{
+    width: 70px;
+}
+.insf{
+margin-left: 40px;
+}

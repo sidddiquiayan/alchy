@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <!-- Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <ul>
+        <!-- Hamburger Menu Icon -->
+<i class="fas fa-bars"></i>
+
+<div class="end-menu">
+<li><a href="">ACCOUNT</a></li>
+<i class="fas fa-search"></i>
+</div>
+
+    </ul>
+   <div class="mask-container">
+  <!-- Video masked by text -->
+  <video class="background-video" autoplay muted loop playsinline>
+    <source src="video.mp4" type="video/mp4">
+  </video>
+
+  <!-- Mask SVG definition -->
+  <svg class="mask-svg" viewBox="0 0 1200 600">
+    <defs>
+      <mask id="text-mask" x="0" y="0" width="100%" height="100%" maskUnits="userSpaceOnUse">
+        <!-- Black background hides video -->
+        <rect width="100%" height="100%" fill="black " x="60%"/>
+        <!-- White text reveals video -->
+Ima      <image href="./logo.png" x="20%" y="15%" text-anchor="middle" class="mask-logo" />
+ <text x="15%" y="75%" text-anchor="middle" class="mask-nav" >Artist</text>
+          <text x="35%" y="75%" text-anchor="middle" class="mask-nav">Actor</text>
+          <text x="57%" y="75%" text-anchor="middle" class="mask-nav">Content Creator</text>
+          <text x="87%" y="75%" text-anchor="middle" class="mask-nav">APPLY TO JOIN</text>
+          <image x="50%" y="85%" text-anchor="middle" class="mask-chev" href="chevron.png"/>
+      </mask>
+    </defs>
+  </svg>
+
+</div>
+<!-- instagram feed  -->
+ <!-- Elfsight Instagram Feed | Untitled Instagram Feed -->
+  <div class="insf">
+
+      <script src="https://static.elfsight.com/platform/platform.js" async></script>
+      <div class="elfsight-app-4ab22fdd-9b3e-4132-a284-99f98cc6a692" data-elfsight-app-lazy></div>
+    </div>
+<!-- instagram feed  -->
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const posts = document.querySelectorAll('.es-post');
+  posts.forEach(post => {
+    post.style.height = 'auto'; // Reset height if previously fixed
+  });
+});
+</script>
+</body>
+</html>
